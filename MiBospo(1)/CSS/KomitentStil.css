@@ -1,0 +1,137 @@
+﻿/*Postavljanje boje fonta za cijeli dokument*/
+*{
+    color:mediumblue;
+}
+/*Centriranje diva i podesavanje sirine*/
+#glavniDiv{
+    margin:auto;
+    width:450px;
+}
+
+/*Podesavanje prvog textboxa JMBG..njegovu visinu sirinu poziciju desno uz roditeljski element i okvir*/
+#txtJMBG{
+    float:right;
+    height:20px;
+    width:175px;
+    border:2px solid #ccc;
+    margin-top:2px;
+}
+/*Podesavanje label JMBG da bude u liniji sa drugim elementom i da je odvojen 10px od gornjeg elementa*/
+#lblJMBG{
+    display:inline-block;
+    margin-top:10px;
+}
+/*Definisanje fleksibilnog prikazivanja elemenata radi prikazivanja tackica od elementa do elementa
+    da se popuni prazan prostor
+*/
+#JMBGDiv,
+#imeDiv,
+#prezimeDiv,
+#gradDiv,
+#adresaDiv,
+#komitentDiv{
+    display:flex;
+}
+/*Definisanje tackica koje ce potpuniti prazan prostor od labela do textboxa*/
+.tackice {
+    flex-grow: 1;
+    border-bottom: 2px dotted;
+    border-color:mediumblue;
+    margin-bottom: 3px;
+}
+/*Definisanje textboxa ImeKomitenta */
+#txtImeKomitenta {
+    float: right;
+    height: 20px;
+    width: 250px;
+    border: 2px solid #ccc;
+    margin-top:2px;
+}
+/*Pozicioniranje labela Ime odvajanje od gornjeg elementa*/
+#lblIme{
+    margin-top:13px;
+}
+/*Definisanje textboxa prezime */
+#txtPrezime {
+    float: right;
+    height: 20px;
+    width: 250px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+/*Pozicioniranje labela prezime 13px od gornjeg elementa*/
+
+#lblPrezime{
+    margin-top:13px;
+}
+/*Definisanje drop down liste grad*/
+#ddlGrad {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblGrad{
+    margin-top:13px;
+}
+#txtAdresa {
+    float: right;
+    height: 20px;
+    width: 250px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblAdresa{
+    margin-top:13px;
+}
+#slikaDiv{
+    text-align:right;
+}
+#naslovID{
+    position:absolute;
+    font-weight:200;
+}
+
+/*Podesavanje da mi se okvir ne mjenja nakon klika na textbox*/
+#txtJMBG:focus,
+#txtImeKomitenta:focus,
+#txtPrezime:focus,
+#ddlGrad:focus,
+#txtAdresa:focus{
+    outline: none;
+}
+/*Podesavanje boje i izgleda za strelicu na drop down listi*/
+select{
+    color:lightslategrey;
+}
+
+/*Stiliziranje ikona koje rade kao dugmici kao i span tekstualnih elemenata*/
+#dugmiciID{
+    display:flex;
+}
+#dugmiciID span {
+    cursor: pointer;
+}
+#obrisiID{
+    margin-left:50px;
+
+}
+#ispraviID{
+    margin-left:50px;
+
+}
+#unesiID{
+    margin-left:50px;
+
+}
+#ispravi1{
+    height:28px;
+}
+#labelZaGreskeID{
+    display:flex;
+    text-align:center;
+    margin-top:25px;
+}
+
+

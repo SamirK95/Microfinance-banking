@@ -1,0 +1,107 @@
+﻿/*Postavljanje boje fonta cijelog dokumenta na plavu boju*/
+*{
+    color:mediumblue;
+}
+/*Centriranje diva i podesavanje sirine*/
+#glavniDiv {
+    margin: auto;
+    width: 430px;
+}
+/*Poravnanje logotipa i naslova */
+#slikaDiv {
+    text-align: right;
+}
+
+#naslovID {
+    position: absolute;
+    font-weight: 200;
+}
+/*Podesavanje prvog textboxa "isplate za period od"..njegovu visinu sirinu poziciju desno uz roditeljski element i okvir*/
+#txtIsplateOdDatuma {
+    float: right;
+    height: 20px;
+    width: 100px;
+    border: 2px solid #ccc;
+}
+#lblIsplateOdDatuma {
+    display: inline-block;
+    margin-top: 10px;
+}
+/*Podesavanje drugog textBoxa "isplate za period do"..njegovu visinu, sirinu, poziciju desno uz roditeljski element i okvir*/
+#txtIsplateDoDatuma {
+    float: right;
+    height: 20px;
+    width: 100px;
+    border: 2px solid #ccc;
+}
+#lblIsplateDoDatuma{
+    display:inline-block;
+    margin-top:10px;
+}
+/*Definisanje fleksibilnog prikazivanja elemenata radi prikazivanja tackica od elementa do elementa
+    da se popuni prazan prostor
+*/
+#isplateOdDatumaID,
+#isplateDoDatumaID,
+#odaberiteRegijuID,
+#odaberitePodruznicuID,
+#odaberiteUredID {
+    display: flex;
+}
+.tackice {
+    flex-grow: 1;
+    border-bottom: 2px dotted;
+    border-color: mediumblue;
+    margin-bottom: 3px;
+}
+/*Stiliziranje drop down listi i njihovih label-a*/
+#lblOdaberiteRegiju{
+    margin-top: 10px;
+}
+
+#ddlOdaberitePodruznicu {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+
+#lblOdaberitePodruznicu {
+    margin-top: 10px;
+}
+
+#ddlOdaberiteUred {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+
+#lblOdaberiteUred {
+    margin-top: 10px;
+}
+
+/*Podesavanje da mi se okvir ne mjenja nakon klika na textbox*/
+#txtIsplateOdDatuma:focus,
+#txtIsplateDoDatuma:focus,
+#ddlRegija:focus,
+#ddlOdaberitePodruznicu:focus,
+#ddlOdaberiteUred:focus {
+    outline: none;
+}
+/*Podesavanje boje i izgleda za strelicu na drop down listi*/
+select {
+    color: lightslategrey;
+}
+#dugmiciID{
+    display:flex;
+}
+#uradiIzvjestajID{
+    margin-left:51%;
+}
+
+.dugmiciSpan{
+    cursor:pointer;
+}

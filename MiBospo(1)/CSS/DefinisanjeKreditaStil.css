@@ -1,0 +1,200 @@
+﻿/*Postavljanje boje fonta za cijeli dokument*/
+* {
+    color: mediumblue;
+}
+/*Centriranje diva i podesavanje sirine*/
+#glavniDiv {
+    margin: auto;
+    width: 500px !important;
+}
+/*Postavljanje prvog textboxa desno na kraj*/
+#txtBrojKredita {
+    float: right;
+    height: 20px;
+    width: 130px;
+    border: 2px solid #ccc;
+}
+/*Podesavanje label JMBG da bude u liniji sa drugim elementom i da je odvojen 10px od gornjeg elementa*/
+#lblBrojKredita {
+    display: inline-block;
+    margin-top: 10px;
+}
+/*Postavljanje fleksibilnog prikaza za sve divove u kojim ce se nalaziti tackice od elementa do elementa*/
+#brojKreditaDiv,
+#korisnikKreditaDiv,
+#datumIsplateDiv,
+#iznosKreditaDiv,
+#rokOtplateKreditaDiv,
+#iznosKamatneStopeDiv,
+#regijaDiv,
+#podruznicaDiv,
+#uredDiv
+{
+    display: flex;
+}
+/*Definisanje tackica koje ce potpuniti prazan prostor od labela do textboxa*/
+.tackice {
+    flex-grow: 1;
+    border-bottom: 2px dotted;
+    border-color: mediumblue;
+    margin-bottom: 3px;
+}
+/*Postavljanje drugog textboxa desno na kraj roditeljskog diva*/
+#txtKorisnikKredita {
+    float: right;
+    height: 20px;
+    width: 180px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+/*Postavljanje drugog label-a lijevo na pocetak roditeljskog diva*/
+#lblKorisnikKredita {
+    margin-top: 13px;
+}
+/*Pozicioniranje treceg textboxa desno od roditeljskog diva*/
+#txtDatumIsplate {
+    float: right;
+    height: 20px;
+    width: 130px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblDatumIsplate{
+    margin-top:13px;
+}
+/*Pozicioniranje cetvrtog textboxa na desnu stranu roditeljskog diva*/
+#txtIznosKredita {
+    float: right;
+    height: 20px;
+    width: 130px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblIznosKredita{
+    margin-top:13px;
+}
+/*Pozicioniranje petog textboxa na desnu stranu roditeljskog diva*/
+#txtRokOtplate {
+    float: right;
+    height: 20px;
+    width: 70px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblRokOtplate{
+    margin-top:13px;
+}
+/*Pozicioniranje sestog textboxa na desnu stranu roditeljskog diva*/
+#txtIznosKamatneStope {
+    float: right;
+    height: 20px;
+    width: 105px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+#lblIznosKamatneStope{
+    margin-top:13px;
+}
+/*Podesavanje boje selectora u drop down listi*/
+select {
+    color: lightslategrey;
+}
+/*Podesavanje prvog dropdown-a*/
+#ddlRegija {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+
+#lblRegija {
+    margin-top: 13px;
+}
+/*Podesavanje drugog dropdown-a*/
+#ddlPodruznica {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+
+#lblPodruznica {
+    margin-top: 13px;
+}
+/*Podesavanje treceg dropdown-a*/
+#ddlUred {
+    float: right;
+    height: 25px;
+    width: 257px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+}
+
+#lblUred {
+    margin-top: 13px;
+}
+/*Stiliziranje i pozicioniranje headera(naslova forme)*/
+#slikaDiv {
+    text-align: right;
+}
+
+#naslovID {
+    position: absolute;
+    font:bold !important;
+    font-size:20px;
+}
+/*Uklanjanje fokusa na textbox i drop down listu nakon klika*/
+#txtBrojKredita:focus,
+#txtKorisnikKredita:focus,
+#txtDatumIsplate:focus,
+#txtIznosKredita:focus,
+#txtRokOtplate:focus,
+#txtIznosKamatneStope:focus,
+#ddlRegija:focus,
+#ddlPodruznica:focus,
+#ddlUred:focus{
+    outline:none;
+}
+
+/*Podesavanje boje i pozicije placeholdera unutar textboxova*/
+#txtDatumIsplate::placeholder{
+    color:mediumblue;
+}
+#txtIznosKredita::placeholder{
+    text-align:right;
+    color:mediumblue;
+}
+#txtRokOtplate::placeholder{
+    text-align:right;
+    color:mediumblue;
+}
+#txtIznosKamatneStope::placeholder{
+    text-align:right;
+    color:mediumblue;
+}
+/*Postavljanje pozicije tekstualnih spanova koji se nalaze iza textboxova*/
+.desnoPoravnanje{
+    display:flex;
+    align-items:center;
+}
+#dugmiciID{
+    display:flex;
+    align-items:center;
+}
+#obrisiID{
+    margin-left:60px;
+}
+#ispraviID{
+    margin-left:60px;
+}
+#unesiID{
+    margin-left:60px;
+}
+.dugmiciSpan{
+    cursor:pointer;
+}
+#lblIspis2{
+    margin-left:25px;
+}

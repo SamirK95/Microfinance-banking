@@ -1,0 +1,107 @@
+﻿/*Postavljanje boje fonta na plavu za cijeli dokument*/
+*{
+    color:mediumblue;
+}
+/*Centriranje glavnog diva u kojem se nalazi cijeli sadrzaj i odredjivanje sirine diva*/
+#glavniDiv{
+    margin:auto;
+    width:420px;
+}
+/*Pozicioniranje slike i logotipa firme*/
+#slikaDiv {
+    text-align: right;
+}
+
+#naslovID {
+    position: absolute;
+    font-weight: 200;
+}
+/*Podesavanje pozicije visine sirine i okvira za prvi textBox*/
+#txtPocetniDatum {
+    float: right;
+    height: 20px;
+    width: 70px;
+    border: 2px solid #ccc;
+    margin-right:20px;
+}
+/*Podesavanje prvog label-a da bude u liniji sa textBoxom i da je odvojen od gornjeg elementa 10 piksela*/
+#lblPocetniDatum {
+    display: inline-block;
+    margin-top: 10px;
+}
+/*Podesavanje fleksibilne pozicije za sve divove u kojim se nalaze label-i i textboxovi*/
+#pocetniDatumDiv,
+#zavrsniDatumDiv,
+#grupisiPo1Div,
+#grupisiPo2Div{
+    display:flex;
+}
+/*Podešavanje flex-a da popuni prazan prostor izmedju ostala 2 elementa ako dodje do suzavanja elemenata
+    podesavanje donjeg bordera na tackice i da budu 2px velicije, postavljanje boje bordera na plavu,
+    i donje margine na 3px
+*/
+.tackice {
+    flex-grow: 1;
+    border-bottom: 2px dotted;
+    border-color: mediumblue;
+    margin-bottom: 3px;
+    
+}
+/* Podesavanje ostalih label i textboxova u formi da budu poravnati desno,
+    njihovu visinu, sirinu kao i okvir
+*/
+#txtZavrsniDatum {
+    float: right;
+    height: 20px;
+    width: 70px;
+    border: 2px solid #ccc;
+    margin-right: 20px;
+}
+#lblZavrsniDatum{
+    display:inline-block;
+    margin-top:10px;
+}
+#ddlGrupisiPo1 {
+    float: right;
+    height: 25px;
+    width: 190px;
+    border: 2px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 20px;
+}
+#lblGrupisiPo1 {
+    display: inline-block;
+    margin-top: 10px;
+}
+#ddlGrupisiPo2 {
+    float: right;
+    height: 25px;
+    width: 190px;
+    border: 2px solid #ccc;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+#lblGrupisiPo2 {
+    display: inline-block;
+    margin-top: 10px;
+}
+#txtPocetniDatum:focus,
+#txtZavrsniDatum:focus,
+#ddlGrupisiPo1:focus,
+#ddlGrupisiPo2:focus{
+    outline:none;
+}
+select {
+    color: lightslategrey;
+}
+#dugmiciID{
+    display:flex;
+}
+#uradiIzvjestajDiv{
+    margin-left:50%;
+}
+#napustiSpan,
+#uradiSpan{
+    cursor:pointer;
+}
