@@ -200,7 +200,7 @@ public partial class Forme_DefinisanjeKredita : System.Web.UI.Page
         // Konvertiraj datum u format koji se može spremiti u bazu podataka
         string datumZaBazu = datumZaSpremanje.ToString("yyyy-MM-dd");
 
-
+        /*
         //Ovaj upit je probni za datum
 
         // dohvati datum rođenja komitenta iz baze podataka
@@ -215,6 +215,7 @@ public partial class Forme_DefinisanjeKredita : System.Web.UI.Page
             lblIspis2.Text = "Komitent je mlađi od 2004-01-01 i nije dozvoljen kredit!";
             return;
         }
+        */
 
 
         //ukoliko smo prosli sve gore navedene uslove pravimo upit za unos novog korisnika
