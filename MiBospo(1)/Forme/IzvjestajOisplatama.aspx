@@ -36,7 +36,7 @@
             <div id="odaberiteRegijuID">
                 <asp:Label ID="lblOdaberiteRegiju" runat="server" Text="Odaberite regiju"></asp:Label>
                 <span class="tackice"></span>
-                <asp:DropDownList ID="ddlRegija" runat="server" style="float:right;height:25px;width:257px;border:2px solid #ccc;margin-top:2px;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlRegija" runat="server" style="float: right; height: 25px; width: 257px; border: 2px solid #ccc; margin-top: 2px;"></asp:DropDownList>
 
             </div>
 

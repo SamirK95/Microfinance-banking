@@ -4,20 +4,16 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Definisanje Kredita</title>
     <link href="../CSS/DefinisanjeKreditaStil.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-        .auto-style1 {
-            font-weight: normal;
-        }
-    </style>
+   
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="glavniDiv">
 
             <div id="naslovDiv">
-                <h3 id="naslovID" class="auto-style1">Definisanje kredita</h3>
+                <h3 id="naslovID" style="font-weight:normal;">Definisanje kredita</h3>
             </div>
             
             <div id="slikaDiv">

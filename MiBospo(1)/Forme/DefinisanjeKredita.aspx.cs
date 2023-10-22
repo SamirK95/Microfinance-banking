@@ -4,14 +4,17 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 public partial class Forme_DefinisanjeKredita : System.Web.UI.Page
 {
     //Uspostavljanje veze sa SQL-om
+    
     SqlConnection sqlKonekcija = new SqlConnection(ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString);
     SqlCommand cmd;
     SqlDataAdapter da;

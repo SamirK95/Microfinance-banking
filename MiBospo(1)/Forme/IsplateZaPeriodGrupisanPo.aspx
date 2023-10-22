@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Isplate za period</title>
     <link href="../CSS/IsplateZaPeriodStyle.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
